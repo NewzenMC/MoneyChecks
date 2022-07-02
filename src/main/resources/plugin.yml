@@ -1,7 +1,26 @@
 main: '${project.groupId}.${project.artifactId}'
-version: '${project.version}'
 name: '${project.artifactId}'
+version: '${project.version}'
+
 author: TIEB62
 
 depend:
   - Vault
+
+commands:
+  check:
+    usage: "/check <value>"
+    description: "Signs a check with the specified value"
+    permission: moneychecks.check
+  admincheck:
+    usage: "/admincheck <value>"
+    description: "Create a check with the specified value WITHOUT withdrawing your account"
+    permission: moneychecks.admincheck
+
+permissions:
+  moneychecks.check:
+    description: "Allows you to sign a check"
+    default: true
+  moneychecks.admincheck:
+    description: "Allows you to create a check without withdrawing your account"
+    default: op

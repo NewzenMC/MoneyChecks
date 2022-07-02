@@ -1,0 +1,41 @@
+# DO NOT CHANGE THIS LINE
+plugin-version: '${project.version}'
+
+# Check Value in Item Name
+# true : the value of the check will be in the item NAME
+# false : the value of the check will be in the item LORE
+value-in-item-name: true
+
+# The Name of the Check (No effect if check-value-in-item-name is true)
+item-name: '&d&oCheck'
+
+# Color of Check Value (Either in Lore or Name)
+value-color: '&d&o'
+
+item-lore-creator: '&fCreator:'
+item-lore-creator-color: '&a'
+
+# No effect if check-value-in-item-name is true
+item-lore-value: '&fValue:'
+
+additional-lore-line: '&5&oRight Click to collect'
+
+check-sign-signing: '&7&oPrinting and Signing check...'
+check-sign-signed: '&aCheck Printed and Signed !'
+check-sign-error-value-below-zero: '&cCheck value must be above zero'
+check-sign-error-not-enough-money: "&cYou don't have enough money !"
+check-sign-error-withdraw-failed: '&cWithdraw failed:' # Followed by the error message
+check-sign-error-inventory-full: '&cYour inventory is full'
+check-sign-error-no-permission: "&cYou don't have permission to sign checks"
+admin-check-error-no-permission: "&cYou don't have permission to sign admin checks"
+check-sign-error-not-a-player: '&cYou must be a player to sign checks'
+admin-check-error-not-a-player: '&cYou must be a player to sign admin checks'
+invalid-check: '&cInvalid check'
+cashing-check: '&7&oCashing check...'
+cashing-check-failed: '&cCashing check failed:' # Followed by the error message
+cashed-check: '&aYous successfully cashed a check of %value% from %creator% !'
+cashed-admin-check: '&aYous successfully cashed a check of %value% !'
+
+sign-check-source: 'MoneyChecks'
+valid-check-sources:
+  - 'MoneyChecks'
